@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title></title>
 </head>
 
@@ -10,64 +12,74 @@
 
     <div class="menu">
         <div class="container">
-        <div id="bar-up"></div>
-        <div id="bar-middle"></div>
-        <div id="bar-down"></div></div>
-    <ul>
-        <li> <a href="">Home</a></li>
-        <li> <a href="">Web Development</a></li>
-        <li> <a href="">UX/UI</a></li>
-        <li> <a href="">Animation</a></li>
-        <li> <a href="">Content Creation</a></li>
-        <li> <a href="">About me</a></li>
+            <div id="bar-up"></div>
+            <div id="bar-middle"></div>
+            <div id="bar-down"></div>
+        </div>
+        <ul>
+            <li> <a href="index.html">Home</a></li>
+            <li> <a href="pages/web_dev_cat.html">Web Development</a></li>
+            <li> <a href="pages/basic_UX.html">UX/UI</a></li>
+            <li> <a href="pages/basic_animation.html">Animation</a></li>
+            <li> <a href="pages/basic_content.html">Content Creation</a></li>
+            <li> <a href="pages/about_me.html">About me</a></li>
         </ul>
     </div>
 
 
-    <div id="background">
-        <div class="mask">Web Development</div>
-    </div>
+    <a href="pages/web_dev_cat.html">
+        <div id="background">
+            <div class="mask">Web Development</div>
+        </div>
+    </a>
+
+    <a href="pages/basic_UX.html">
     <div id="background2">
         <div class="mask">UI / UX </div>
-    </div>
+        </div></a>
+
+    <a href="pages/basic_animation.html">
     <div id="background3">
         <div class="mask"> Animation </div>
-    </div>
+        </div></a>
 
+    <a href="pages/basic_content.html">
     <div id="background4">
         <div class="mask">Content Creation</div>
-    </div>
+        </div></a>
 
+    <a href="pages/about_me.html">
     <div id="background5">
         <div class="mask"> About me</div>
-    </div>
+        </div></a>
 
-    </body>
+</body>
 
-        <script>
-        const btnBurger = document.querySelector(".container");
-        const barup = document.querySelector("#bar-up");
-        const barmiddle = document.querySelector("#bar-middle");
-        const bardown = document.querySelector("#bar-down");
-        const menu = document.querySelector(".menu");
+<script>
+    const btnBurger = document.querySelector(".container");
+    const barup = document.querySelector("#bar-up");
+    const barmiddle = document.querySelector("#bar-middle");
+    const bardown = document.querySelector("#bar-down");
+    const menu = document.querySelector(".menu");
 
-        btnBurger.addEventListener("click", ChangeIcon);
+    btnBurger.addEventListener("click", ChangeIcon);
 
-        function ChangeIcon() {
-            barup.classList.toggle("barupactive");
-            bardown.classList.toggle("bardownactive");
-            barmiddle.classList.toggle("barmiddleactive");
-            btnBurger.classList.toggle("movedright");
+    function ChangeIcon() {
+        barup.classList.toggle("barupactive");
+        bardown.classList.toggle("bardownactive");
+        barmiddle.classList.toggle("barmiddleactive");
+        btnBurger.classList.toggle("movedright");
 
-            if (menu.classList[0] == ("expand")) {
-                console.log("shouldn't");
-                menu.classList = "";
-                menu.classList.add("retract");
-            } else {
-                menu.classList = "";
-                menu.classList.add("expand");
-                console.log("firstrun");
-            }
+        if (menu.classList[0] == ("expand")) {
+            console.log("shouldn't");
+            menu.classList = "";
+            menu.classList.add("retract");
+        } else {
+            menu.classList = "";
+            menu.classList.add("expand");
+            console.log("firstrun");
         }
-    </script>
+    }
+</script>
+
 </html>

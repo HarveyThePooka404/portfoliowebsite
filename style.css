@@ -8,19 +8,26 @@ body {
 
 #background {
 
+/* size related */
     width: 40vw;
     height: 50vh;
-    background-image: url("1_z4GBDrjAwqtW10UyIhpDrw.jpeg");
+
+/* introducing background image */
+    background-image: url("assets/img/home_page/basic_web_img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 50vw 80vh;
+
+/* position of the box */
     position: absolute;
     top: 10%;
     left: 10%;
+
+/*text handling */
     text-align:center;
     vertical-align: middle;
     line-height: 50vh;
-    z-index: -1;
+
 
 }
 
@@ -28,7 +35,7 @@ body {
 
     width: 40vw;
     height: 50vh;
-    background-image: url("1_sZpTsyYJZfhXp3HJDcwtjg.png");
+    background-image: url("assets/img/home_page/basic_ux_img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left;
@@ -41,16 +48,13 @@ body {
     text-align:center;
     vertical-align: middle;
     line-height: 50vh;
-
-    z-index: -1;
-
 }
 
 #background3 {
 
     width: 40vw;
     height: 50vh;
-    background-image: url("photo-1543242594-c8bae8b9e708.jfif");
+    background-image: url("assets/img/home_page/basic_animation_img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -63,7 +67,6 @@ body {
     text-align:center;
     vertical-align: middle;
     line-height: 50vh;
-    z-index: -1;
 
 }
 
@@ -71,10 +74,12 @@ body {
 
     width: 40vw;
     height: 50vh;
-    background-image: url("1_sZpTsyYJZfhXp3HJDcwtjg.png");
+    background-image: url("assets/img/home_page/basic_content_img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: left;
+    background-size: contain;
+    background-origin: content-box;
+    background-position:right;
 
     position: absolute;
     top: 130%;
@@ -85,7 +90,6 @@ body {
     vertical-align: middle;
     line-height: 50vh;
 
-    z-index: -1;
 
 }
 
@@ -93,12 +97,11 @@ body {
 
     width: 40vw;
     height: 50vh;
-    background-image: url("photo-1543242594-c8bae8b9e708.jfif");
+    background-image: url("assets/img/home_page/about_me_img.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
     background-origin: content-box;
-    background-position:top;
     position: absolute;
 
     top: 160%;
@@ -106,7 +109,6 @@ body {
     text-align:center;
     vertical-align: middle;
     line-height: 50vh;
-    z-index: -1;
 
 }
 
@@ -127,7 +129,7 @@ body {
     background-color: grey;
     width: 20vw;
     height: 100vh;
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     left: -200vw;
 
@@ -162,6 +164,7 @@ li a {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:hover {
@@ -209,6 +212,9 @@ a:hover {
     margin: 0;
     overflow: hidden;
     position: fixed;
+    z-index: 1 ;
+
+
 
 
 }
@@ -248,7 +254,7 @@ a:hover {
     background-color: grey;
     width: 20vw;
     height: 100vh;
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     left: -200vw;
 
@@ -274,7 +280,7 @@ a:hover {
     background-color: grey;
     width: 20vw;
     height: 100vh;
-    z-index: 0;
+    z-index: 1;
     position: fixed;
     left: -20vw;
     }
