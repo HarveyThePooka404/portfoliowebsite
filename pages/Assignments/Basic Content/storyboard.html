@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="storyboard-style.css">
+    <title>FSC Storyboard</title>
+</head>
+
+<body>
+
+    <!-- this is the burger menu -->
+    <div class="menu">
+        <div class="container">
+        <div id="bar-up"></div>
+        <div id="bar-middle"></div>
+        <div id="bar-down"></div></div>
+    <ul>
+        <li> <a href="">Home</a></li>
+        <li> <a href="">Web Development</a></li>
+        <li> <a href="">UX/UI</a></li>
+        <li> <a href="">Animation</a></li>
+        <li> <a href="">Content Creation</a></li>
+        <li> <a href="">About me</a></li>
+        </ul>
+    </div>
+
+    <!-- title and line --> 
+    <div class="title">05.02.03 “Storyboard”. A pdf document with your drawn storyboard.  </div>
+    <div class="vl"></div>
+
+    
+    <!-- page specific content --> 
+    
+    <div class="assignment" id="first-assignment">
+        <h1>Goal</h1>
+        <p> Create a complete storyboard to help filming the short video for Food Sharing Copenhagen.</p>
+    </div>
+
+    <div class="assignment" id="second-assignment">
+        <div class="titre"><br>This is the home page</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+
+    <div class="assignment" id="third-assignment">
+        <h1>Process</h1>
+        <p>We met at KEA to discuss what we wanted to do with the story. Once the story was largely decided, we worked scene by scene to see how we could have the most impact: how to be funny when funny, sad when sad.  
+        </p>
+    </div>
+
+    <div class="assignment" id="fourth-assignment">
+        <div class="titre"><br>This is a title</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+    
+            <div class="assignment" id="fifth-assignment">
+        <h1>What worked well </h1>
+        <p> Using actual pictures for the storyboard helped. We knew where we wanted to film (my flat) when we were deciding of the story: it was important to have a private place to avoid any licencing issues. There was a serie of quick sketches while discussing the storyboard, which allowed us to move directly to picture after that.</p>
+                
+        <p>The storyboard was precise enough that we were able to have a good production schedule after that: we knew which scene was supposed to be filmed in the day / which in the night, who needed to be there, and what props we needed.</p>
+
+    </div>
+    
+            <div class="assignment" id="sixth-assignment">
+        <div class="titre"><br>This is a title</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+    
+                <div class="assignment" id="seventh-assignment">
+        <h1>What could have been improved </h1>
+       <p> The storyboard could have included more technical aspects: it lacked some shots, and we filmed a lot more than the storyboard. By trying to keep it simple, which would allow us to have more freedom while filming, we missed some shots during filming that could have been interesting to have.</p>
+
+    </div>
+    
+                    <div class="assignment" id="eigth-assignment">
+        <h1>Links</h1>
+      <p><a href="">Link to the document</a>
+</p>
+    </div>
+    
+
+    
+<script>
+            const btnBurger = document.querySelector(".container");
+        const barup = document.querySelector("#bar-up");
+        const barmiddle = document.querySelector("#bar-middle");
+        const bardown = document.querySelector("#bar-down");
+        const menu = document.querySelector(".menu");
+
+        btnBurger.addEventListener("click", ChangeIcon);
+
+        function ChangeIcon() {
+            barup.classList.toggle("barupactive");
+            bardown.classList.toggle("bardownactive");
+            barmiddle.classList.toggle("barmiddleactive");
+            btnBurger.classList.toggle("movedright");
+
+            if (menu.classList[0] == ("expand")) {
+                console.log("shouldn't");
+                menu.classList = "";
+                menu.classList.add("retract");
+            } else {
+                menu.classList = "";
+                menu.classList.add("expand");
+                console.log("firstrun");
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
+

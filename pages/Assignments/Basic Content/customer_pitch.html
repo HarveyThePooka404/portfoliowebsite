@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="customer_pitch-style.css">
+    <title>FSC Customer Pitch</title>
+</head>
+
+<body>
+
+    <!-- this is the burger menu -->
+    <div class="menu">
+        <div class="container">
+        <div id="bar-up"></div>
+        <div id="bar-middle"></div>
+        <div id="bar-down"></div></div>
+    <ul>
+        <li> <a href="">Home</a></li>
+        <li> <a href="">Web Development</a></li>
+        <li> <a href="">UX/UI</a></li>
+        <li> <a href="">Animation</a></li>
+        <li> <a href="">Content Creation</a></li>
+        <li> <a href="">About me</a></li>
+        </ul>
+    </div>
+
+    <!-- title and line --> 
+    <div class="title"> 05.02.04 “Customer pitch”. </div>
+    <div class="vl"></div>
+
+    
+    <!-- page specific content --> 
+    
+    <div class="assignment" id="first-assignment">
+        <h1>Goal</h1>
+        <p> Once the rest of the project was done, including filming, editing and creating the website, we were to picth our whole campaign to the client, Food Sharing Copenhagen. </p>
+    </div>
+
+    <div class="assignment" id="second-assignment">
+        <div class="titre"><br>This is the home page</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+
+    <div class="assignment" id="third-assignment">
+        <h1>Process</h1>
+        <p> We divided the pitch in two-parts, to be done by Ruta and I. The pitch was only 7 minutes, and we accounted for the video to be shown, which took 3 minutes. Having only two speakers for 2 minutes made sense, to avoid changing too quickly.        </p>
+
+        <p> We showed the video, then explained our reasoning behind it.</p> 
+    </div>
+
+    <div class="assignment" id="fourth-assignment">
+        <div class="titre"><br>This is a title</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+    
+            <div class="assignment" id="fifth-assignment">
+        <h1>What worked well </h1>
+        <p> Both Ruta and I are used to public speaking and felt confident in talking in front of a crowd. We had a strong concept, and the presentation was original.</div>
+    
+            <div class="assignment" id="sixth-assignment">
+        <div class="titre"><br>This is a title</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+    
+                <div class="assignment" id="seventh-assignment">
+        <h1>What could have been improved </h1>
+       <p> It was harder than expected to address both the specific client and the crowd. We had to balance between public speaking and directl talking to someone. In an actual pitch, with only 3 people, the approach would have been different. I think we approached it too much as an actual pitch and not as a public speaking event. </p>
+    <p>We did not balance properly between a social media campaign, and its related hashtag, and the website. We should have tried to understand better what Food Sharing Copenhagen expected of us.</p>
+
+    </div>
+    
+                    <div class="assignment" id="eigth-assignment">
+        <h1>Links</h1>
+      <p><a href="">Link to the document</a>
+</p>
+    </div>
+    
+
+    
+<script>
+            const btnBurger = document.querySelector(".container");
+        const barup = document.querySelector("#bar-up");
+        const barmiddle = document.querySelector("#bar-middle");
+        const bardown = document.querySelector("#bar-down");
+        const menu = document.querySelector(".menu");
+
+        btnBurger.addEventListener("click", ChangeIcon);
+
+        function ChangeIcon() {
+            barup.classList.toggle("barupactive");
+            bardown.classList.toggle("bardownactive");
+            barmiddle.classList.toggle("barmiddleactive");
+            btnBurger.classList.toggle("movedright");
+
+            if (menu.classList[0] == ("expand")) {
+                console.log("shouldn't");
+                menu.classList = "";
+                menu.classList.add("retract");
+            } else {
+                menu.classList = "";
+                menu.classList.add("expand");
+                console.log("firstrun");
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
+

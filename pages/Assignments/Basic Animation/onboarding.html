@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="onboarding-style.css">
+    <title>Onboarding</title>
+</head>
+
+<body>
+
+    <!-- this is the burger menu -->
+    <div class="menu">
+        <div class="container">
+        <div id="bar-up"></div>
+        <div id="bar-middle"></div>
+        <div id="bar-down"></div></div>
+    <ul>
+        <li> <a href="">Home</a></li>
+        <li> <a href="">Web Development</a></li>
+        <li> <a href="">UX/UI</a></li>
+        <li> <a href="">Animation</a></li>
+        <li> <a href="">Content Creation</a></li>
+        <li> <a href="">About me</a></li>
+        </ul>
+    </div>
+
+    <!-- title and line --> 
+    <div class="title">04.04.01 Link to your Onboarding  
+</div>
+    <div class="vl"></div>
+
+    
+    <!-- page specific content --> 
+    
+    <div class="assignment" id="first-assignment">
+        <h1>Goal</h1>
+        <p> Create an interactive, animated, web based onboarding sequence that through gamification explains an important aspect about moving to Denmark to be a student on KEA multimedia design.</p>
+    </div>
+
+    <div class="assignment" id="second-assignment">
+        <div class="titre"><br>This is the home page</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+
+    <div class="assignment" id="third-assignment">
+        <h1>Process</h1>
+        <p>In a group of 4, we had to create a website for international students. We all agreed quickly on the theme: “understanding administrative paperwork in Denmark”, and the biggest challenge was to make it attractive and interesting to go through. To do so, we decided to follow a specific character “Simon”, moving from France to Denmark. After doing a storyboard, we divided the tasks. I worked on doing the website, while other members did the graphic design and marketing.
+        </p>
+    </div>
+
+    <div class="assignment" id="fourth-assignment">
+        <div class="titre"><br>This is a title</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+    
+            <div class="assignment" id="fifth-assignment">
+        <h1>What worked well </h1>
+                <p> Within the group, we had very different strengths. It was very nice to see the character designs from Laufey being so good, and every member of the group did at least one background for the website. With a clear mood-board and direction, we were able to work on different part of the projects, while having a coherent website in the end. </p>
+
+<p>I am very happy of the copy and micro-copy of the website, that has the “funny” approach that I couldn’t find during the “03.03.01 - Prototype”. 
+ </p>
+
+    </div>
+    
+            <div class="assignment" id="sixth-assignment">
+        <div class="titre"><br>This is a title</div><img src="Home%20Page%20OwlDesign.png">
+    </div>
+    
+                <div class="assignment" id="seventh-assignment">
+        <h1>What could have been improved </h1>
+       <p>The final website was calibrated to be working on my laptop in full screen. It is too specific (while working for the exhibition), and should be changed if we were to re-work on the website.</p>
+
+<p>The sound of the typewriter used while the text is appearing on screen is very repetitive in the end. It might have been interesting to see different sounds during the whole game. </p>
+
+<p>The position of the characters feel very fake. Simon is nearly always facing the screen, and we should have had more natural position throughout the game. </p>
+
+<p> The gamification is limited to how you choose to go through the story. It could have been interesting to have “mini-games” through the experience. </p>
+
+    </div>
+    
+                    <div class="assignment" id="eigth-assignment">
+        <h1>Links</h1>
+      <p><a href="">Link to the Onboarding</a>
+</p>
+    </div>
+    
+
+    
+<script>
+            const btnBurger = document.querySelector(".container");
+        const barup = document.querySelector("#bar-up");
+        const barmiddle = document.querySelector("#bar-middle");
+        const bardown = document.querySelector("#bar-down");
+        const menu = document.querySelector(".menu");
+
+        btnBurger.addEventListener("click", ChangeIcon);
+
+        function ChangeIcon() {
+            barup.classList.toggle("barupactive");
+            bardown.classList.toggle("bardownactive");
+            barmiddle.classList.toggle("barmiddleactive");
+            btnBurger.classList.toggle("movedright");
+
+            if (menu.classList[0] == ("expand")) {
+                console.log("shouldn't");
+                menu.classList = "";
+                menu.classList.add("retract");
+            } else {
+                menu.classList = "";
+                menu.classList.add("expand");
+                console.log("firstrun");
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>
+
