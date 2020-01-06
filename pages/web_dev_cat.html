@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web_dev_cat_style.css">
+    <title>Web Design</title>
+</head>
+
+<body>
+    <!-- this is the burger menu copy pasted -->
+
+    <div class="menu">
+        <div class="container">
+            <div id="bar-up"></div>
+            <div id="bar-middle"></div>
+            <div id="bar-down"></div>
+        </div>
+        <ul>
+            <li> <a href="">Home</a></li>
+            <li> <a href="">Web Development</a></li>
+            <li> <a href="">UX/UI</a></li>
+            <li> <a href="">Animation</a></li>
+            <li> <a href="">Content Creation</a></li>
+            <li> <a href="">About me</a></li>
+        </ul>
+    </div>
+
+    <!-- start of the page specific content -->
+    <!-- this is the title -->
+
+    <div class="title"> <br> Web Development</div>
+    <div class="vl"></div>
+
+    <!-- start of the assignments done during the Theme -->
+
+    <div class="assignment" id="first-assignment">
+        <div class="titre" onclick=""><br><a href="">02.04.01 Responsive website</a></div>
+        <img src="Home%20Page%20OwlDesign.png">
+    </div>
+
+    <script>
+        const btnBurger = document.querySelector(".container");
+        const barup = document.querySelector("#bar-up");
+        const barmiddle = document.querySelector("#bar-middle");
+        const bardown = document.querySelector("#bar-down");
+        const menu = document.querySelector(".menu");
+
+        btnBurger.addEventListener("click", ChangeIcon);
+
+        function ChangeIcon() {
+            barup.classList.toggle("barupactive");
+            bardown.classList.toggle("bardownactive");
+            barmiddle.classList.toggle("barmiddleactive");
+            btnBurger.classList.toggle("movedright");
+
+            if (menu.classList[0] == ("expand")) {
+                console.log("shouldn't");
+                menu.classList = "";
+                menu.classList.add("retract");
+            } else {
+                menu.classList = "";
+                menu.classList.add("expand");
+                console.log("firstrun");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
