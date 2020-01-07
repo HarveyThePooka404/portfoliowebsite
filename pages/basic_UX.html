@@ -5,6 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="basic_UX-style.css">
+    <link rel="stylesheet" href="category-style-ipad.css">
+
+    <link rel="stylesheet" href="../burger_menu.css">
     <title>Basic UX </title>
 </head>
 
@@ -18,12 +21,12 @@
             <div id="bar-down"></div>
         </div>
         <ul>
-            <li> <a href="">Home</a></li>
-            <li> <a href="">Web Development</a></li>
-            <li> <a href="">UX/UI</a></li>
-            <li> <a href="">Animation</a></li>
-            <li> <a href="">Content Creation</a></li>
-            <li> <a href="">About me</a></li>
+            <li> <a href="../index.html">Home</a></li>
+            <li> <a href="web_dev_cat.html">Web Development</a></li>
+            <li> <a href="basic_UX.html">UX/UI</a></li>
+            <li> <a href="basic_animation.html">Animation</a></li>
+            <li> <a href="basic_content.html">Content Creation</a></li>
+            <li> <a href="about_me.html">About me</a></li>
         </ul>
     </div>
 
@@ -36,49 +39,23 @@
     <!-- start of the assignments done during the Theme -->
 
     <div class="assignment" id="first-assignment">
-        <div class="titre" onclick=""><br><a href="">03.01.01 - Data collection</a></div>
-        <img src="Home%20Page%20OwlDesign.png">
+        <div class="titre"><br><a href="Assignments/Basic_UX/data_collection.html">03.01.01 - Data collection</a></div>
+        <img src="../assets/img/home_page/basic_ux_img.jpg">
     </div>
 
         <div class="assignment" id="second-assignment">
-        <div class="titre" onclick=""><br><a href="">03.03.01 - Prototype</a></div>
-        <img src="Home%20Page%20OwlDesign.png">
+        <div class="titre"><br><a href="Assignments/Basic_UX/prototype.html">03.03.01 - Prototype</a></div>
+        <img src="../assets/img/basic_ux/kare_img.jpg">
     </div>
 
         <div class="assignment" id="third-assignment">
-        <div class="titre" onclick=""><br><a href="">03.04.01 - sprint design</a></div>
-        <img src="Home%20Page%20OwlDesign.png">
+        <div class="titre"><br><a href="Assignments/Basic_UX/design_sprint.html">03.04.01 - sprint design</a></div>
+        <img src="../assets/img/basic_ux/design_sprint_img.jpg">
     </div>
 
 
 
-    <script>
-        const btnBurger = document.querySelector(".container");
-        const barup = document.querySelector("#bar-up");
-        const barmiddle = document.querySelector("#bar-middle");
-        const bardown = document.querySelector("#bar-down");
-        const menu = document.querySelector(".menu");
-
-        btnBurger.addEventListener("click", ChangeIcon);
-
-        function ChangeIcon() {
-            barup.classList.toggle("barupactive");
-            bardown.classList.toggle("bardownactive");
-            barmiddle.classList.toggle("barmiddleactive");
-            btnBurger.classList.toggle("movedright");
-
-            if (menu.classList[0] == ("expand")) {
-                console.log("shouldn't");
-                menu.classList = "";
-                menu.classList.add("retract");
-            } else {
-                menu.classList = "";
-                menu.classList.add("expand");
-                console.log("firstrun");
-            }
-        }
-
-    </script>
+    <script src="../burger_menu.js"></script>
 
 </body>
 

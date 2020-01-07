@@ -40,11 +40,11 @@ body {
 }
 
 .vl {
-  border-left: 1px solid white;
+  border-left: 2px solid white;
   margin-left: -3px;
   top: 0;
     grid-row-start: 4;
-    grid-row-end: span 4;
+    grid-row-end: span 7;
     grid-column-start: 7;
     z-index: -1;
 }

@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="basic_animation-style.css">
+    <link rel="stylesheet" href="category-style-ipad.css">
+    <link rel="stylesheet" href="../burger_menu.css">
     <title>Animation </title>
 </head>
 
@@ -18,12 +20,12 @@
             <div id="bar-down"></div>
         </div>
         <ul>
-            <li> <a href="">Home</a></li>
-            <li> <a href="">Web Development</a></li>
-            <li> <a href="">UX/UI</a></li>
-            <li> <a href="">Animation</a></li>
-            <li> <a href="">Content Creation</a></li>
-            <li> <a href="">About me</a></li>
+            <li> <a href="../index.html">Home</a></li>
+            <li> <a href="web_dev_cat.html">Web Development</a></li>
+            <li> <a href="basic_UX.html">UX/UI</a></li>
+            <li> <a href="basic_animation.html">Animation</a></li>
+            <li> <a href="basic_content.html">Content Creation</a></li>
+            <li> <a href="about_me.html">About me</a></li>
         </ul>
     </div>
 
@@ -36,57 +38,31 @@
     <!-- start of the assignments done during the Theme -->
 
     <div class="assignment" id="first-assignment">
-        <div class="titre"><br><a href="">04.01.01 Sprite animation on a background
+        <div class="titre"><a href="Assignments/Basic_Animation/sprite_animation.html">04.01.01 Sprite animation on a background
             </a></div>
-        <img src="Home%20Page%20OwlDesign.png">
+        <img src="../assets/img/basic_animation/complete_img.jpg">
     </div>
 
     <div class="assignment" id="second-assignment">
-        <div class="titre"><br><a href="">04.02.01 Javascript controlled animation
+        <div class="titre"><a href="Assignments/Basic_Animation/javascript_controlled_animation.html">04.02.01 Javascript controlled animation
             </a></div>
-        <img src="Home%20Page%20OwlDesign.png">
+        <img src="../assets/img/basic_animation/javascript_controlled_img.jpg">
     </div>
 
     <div class="assignment" id="third-assignment">
-        <div class="titre"><br><a href="">04.03.01 Project pool 1 or 04.03.02 Project pool 2
+        <div class="titre"><a href="Assignments/Basic_Animation/pool_projects.html">04.03.01 Project pool 1 or 04.03.02 Project pool 2
             </a></div>
-        <img src="Home%20Page%20OwlDesign.png">
+        <img src="../assets/img/basic_animation/drummachine_esther_img.jpg">
     </div>
 
     <div class="assignment" id="fourth-assignment">
-        <div class="titre"><br><a href="">04.04.01 Link to your Onboarding
+        <div class="titre"><br><a href="Assignments/Basic_Animation/onboarding.html">04.04.01 Link to your Onboarding
             </a></div>
-        <img src="Home%20Page%20OwlDesign.png">
+        <img src="../assets/img/basic_animation/onboarding_img.jpg">
     </div>
 
 
-    <script>
-        const btnBurger = document.querySelector(".container");
-        const barup = document.querySelector("#bar-up");
-        const barmiddle = document.querySelector("#bar-middle");
-        const bardown = document.querySelector("#bar-down");
-        const menu = document.querySelector(".menu");
-
-        btnBurger.addEventListener("click", ChangeIcon);
-
-        function ChangeIcon() {
-            barup.classList.toggle("barupactive");
-            bardown.classList.toggle("bardownactive");
-            barmiddle.classList.toggle("barmiddleactive");
-            btnBurger.classList.toggle("movedright");
-
-            if (menu.classList[0] == ("expand")) {
-                console.log("shouldn't");
-                menu.classList = "";
-                menu.classList.add("retract");
-            } else {
-                menu.classList = "";
-                menu.classList.add("expand");
-                console.log("firstrun");
-            }
-        }
-
-    </script>
+    <script src="../burger_menu.js"></script>
 
 </body>
 

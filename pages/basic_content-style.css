@@ -4,8 +4,9 @@ body {
     background-color: black;
     display: grid;
     grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10px;
-    grid-template-rows: 10px repeat(15, 1fr);
+    grid-template-rows: 10px auto 4em auto 4em auto 4em auto 4em;
     margin: 0 auto;
+    font-family: "Rubik", sans-serif;
 }
 
 .container {
@@ -30,21 +31,21 @@ body {
 }
 
 .title {
-    background-image: url(1_z4GBDrjAwqtW10UyIhpDrw.jpeg);
-    grid-row: 2 / span 2;
+    grid-row: 2 / span 1;
     grid-column: 4 / span 6;
     color: white;
-    font-size: 7em;
+    font-size: 6em;
     text-align: center;
+    background-color: black;
 
 }
 
 .vl {
-  border-left: 1px solid white;
+  border-left: 2px solid white;
   margin-left: -3px;
   top: 0;
-    grid-row-start: 4;
-    grid-row-end: span 12;
+    grid-row-start: 2;
+    grid-row-end: span 10;
     grid-column-start: 7;
     z-index: -1;
 }
@@ -52,8 +53,8 @@ body {
 /* styling assignment */
 
 img {
-    width:100%;
-    height:100%;
+    height: 100%;
+    width: 100%;
     flex:none;
     box-sizing: border-box;
     margin-left: -100%;
@@ -63,16 +64,15 @@ img {
 .titre {
     flex:none;
     width:100%;
-    height:100%;
     box-sizing: border-box;
     text-align: center;
-    font-size: 7em;
+    font-size: 4em;
 }
 
 /* styling for the assignments */
 
 #first-assignment {
-    grid-row: 5/ span 3 ;
+    grid-row: 4/ span 1 ;
     grid-column: 4 / span 6;
     display: flex;
     flex-flow: row nowrap;
@@ -80,7 +80,7 @@ img {
 }
 
 #second-assignment {
-    grid-row: 9/ span 3 ;
+    grid-row: 6/ span 1 ;
     grid-column: 4 / span 6;
     display: flex;
     flex-flow: row nowrap;
@@ -88,7 +88,7 @@ img {
 }
 
 #third-assignment {
-    grid-row: 13/ span 3 ;
+    grid-row: 8/ span 1 ;
     grid-column: 4 / span 6;
     display: flex;
     flex-flow: row nowrap;
@@ -103,7 +103,6 @@ img {
 
 .assignment a:hover {
     text-decoration: none;
-    color: black;
 
 }
 
@@ -136,172 +135,4 @@ img {
     background-color: white;
     opacity: 0.8;
 }
-/* styling for burger menu */
 
-.menu {
-    background-color: grey;
-    width: 20vw;
-    height: 100vh;
-    z-index: 0;
-    position: fixed;
-    left: -200vw;
-
-}
-.container {
-    padding: 5px;
-    width: 5em;
-    z-index: 2;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
-}
-
-li {
-    display: flex;
-    flex-flow: row;
-}
-
-li a {
-    display: block;
-    padding: 20px;
-    font-size: 2em;
-    color: white;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: yellow;
-}
-
-/* burger icons */
-
-.container div {
-    margin: 0em;
-    width: 40px;
-    background-color: #fff;
-    border-radius: 3px;
-    content: '';
-    display: block;
-    height: 5px;
-    margin: 7px 0;
-    transition: all .2s ease-in-out;
-}
-
-
-.barupactive {
-    transform: translateY(12px) rotate(135deg);
-}
-
-.bardownactive {
-    transform: translateY(-12px) rotate(-135deg);
-}
-
-.barmiddleactive {
-    transform: scale(0);
-}
-
-
-/* expand the burger menu animation */
-.expand {
-
-    animation: expandMovement 0.4s ease;
-    width: 20vw;
-    height: 100vh;
-    border-radius: 0;
-    background-color: grey;
-    left: 0;
-    top: 0;
-    margin: 0;
-    overflow: hidden;
-    position: fixed;
-
-
-}
-
-@keyframes expandMovement {
-    from {
-
-        height: 100vh;
-        width: 8em;
-        background-color: grey;
-        position: fixed;
-        left: 0;
-        top: 0;
-        z-index: 1;
-
-    }
-
-    to {
-        width: 20vw;
-        height: 100vh;
-        background-color: grey;
-        margin: 0;
-        z-index: 1;
-        position: fixed;
-        left: 0;
-        top: 0;
-
-    }
-}
-
-
-/* should do retract animation */
-
-.retract {
-
-    animation: retractMovement 0.3s ease;
-    background-color: grey;
-    width: 20vw;
-    height: 100vh;
-    z-index: 0;
-    position: fixed;
-    left: -200vw;
-
-}
-
-@keyframes retractMovement {
-    from {
-        width: 20vw;
-        height: 100vh;
-        border-radius: 0;
-        background-color: grey;
-        left: 0;
-        top: 0;
-        margin: 0;
-        z-index: 1;
-        position: fixed;
-        left: 0;
-        top: 0;
-
-    }
-
-    to {
-    background-color: grey;
-    width: 20vw;
-    height: 100vh;
-    z-index: 0;
-    position: fixed;
-    left: -20vw;
-    }
-    }
-
-
-/* moving burger icon */
-
-.movedright{
-        padding: 5px;
-    width: 5em;
-    z-index: 2;
-    top: 20px;
-    left: 14vw;
-}
