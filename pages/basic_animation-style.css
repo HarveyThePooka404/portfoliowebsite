@@ -6,6 +6,7 @@ body {
     grid-template-columns: 10px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10px;
     grid-template-rows: 10px repeat(19, 1fr);
     margin: 0 auto;
+    font-family: "Rubik", sans-serif;
 }
 
 .container {
@@ -66,7 +67,7 @@ img {
     height:100%;
     box-sizing: border-box;
     text-align: center;
-    font-size: 7em;
+    font-size: 5em;
 }
 
 /* styling for the assignments */
@@ -111,7 +112,6 @@ img {
 
 .assignment a:hover {
     text-decoration: none;
-    color: black;
 
 }
 
